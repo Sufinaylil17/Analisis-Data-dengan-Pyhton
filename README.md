@@ -49,5 +49,5 @@ Analisis yang Dilakukan
 2. Bagaimana pola peminjaman sepeda berdasarkan waktu (jam, hari kerja, dan musim)?
 
 Insight Utama
-- Peminjaman sepeda meningkat saat cuaca cerah dan selama musim tertentu.
-- Ada pola peminjaman yang lebih tinggi pada jam sibuk (pagi dan sore hari).
+1. Peminjaman sepeda meningkat saat cuaca cerah dan selama musim tertentu.
+2. Ada pola peminjaman yang lebih tinggi pada jam sibuk (pagi dan sore hari).
