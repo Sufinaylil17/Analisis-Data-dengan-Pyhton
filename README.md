@@ -1,27 +1,43 @@
 # Analisis-Data-dengan-Pyhton
 
-Project ini bertujuan untuk menganalisis data peminjaman sepeda dan membangun dashboard interaktif menggunakan Streamlit. Analisis data dilakukan untuk memahami pola peminjaman sepeda berdasarkan waktu serta pengaruh kondisi cuaca terhadap jumlah peminjaman.
+Project ini bertujuan untuk menganalisis data peminjaman sepeda dan membangun Dashboard yang dikembangkan menggunakan Streamlit untuk menampilkan analisis interaktif mengenai data peminjaman sepeda. Data yang digunakan berasal dari dataset peminjaman sepeda harian dan per jam. Dashboard ini bertujuan untuk menjawab beberapa pertanyaan analisis utama terkait pola peminjaman sepeda berdasarkan faktor-faktor eksternal seperti kondisi cuaca, musim, jam, hari kerja, dan tren waktu.
 
-Dataset
+fitur analisis pada Dashboard
+1. peminjaman sepeda berdasarkan kondisi cuaca
+   - Visualisasi menggunakan Boxplot
+   - Menampilkan distribusi jumlah peminjaman berdasarkan kondisi cuaca (Cerah, Berawan, 
+     Hujan/Snow).
+2. peminjaman sepeda berdasarkan Hari kerja
+   - Visualisasi menggunakan Boxplot
+   - Membandingkan peminjaman antara hari kerja dan akhir pekan/libur.
+3. Peminjaman Sepeda Berdasarkan Musim
+   - Visualisasi menggunakan Barplot
+   - Menampilkan total peminjaman di setiap musim (Semi, Panas, Gugur, Dingin).
+4. Pola Peminjaman Sepeda Berdasarkan Jam
+   - Visualisasi menggunakan Lineplot
+   - Menunjukkan rata-rata peminjaman pada setiap jam dalam sehari.
+5. Tren Harian Peminjaman Sepeda (Moving Average)
+   - Visualisasi menggunakan Lineplot dengan perataan (7-day Moving Average)
+   - Menunjukkan tren umum peminjaman dari waktu ke waktu.
 
-Dataset yang digunakan dalam prject ini berisi informasi mengenai peminjaman sepeda dengan berbagai macam variabel seperti berikut ini:
-- Datetime: Waktu peminjaman
-- Season: Musim saat peminjaman terjadi
-- Holiday: Apakah hari tersebut hari libur atau bukan
-- Workingday: Indikasi apakah hari tersebut merupakan hari kerja
-- Weather Condition: Kondisi cuaca saat peminjaman
-- Temperature: Suhu dalam skala Celsius
-- Humidity: Tingkat kelembaban
-- Windspeed: Kecepatan angin
-- Casual Users: Jumlah peminjam yang tidak memiliki langganan
-- Registered Users: Jumlah peminjam yang memiliki langganan
-- Total Users: Total jumlah peminjam
+Teknologi yang Digunakan
+ - Python
+ - Pandas
+ - Matplotlib & Seaborn
+ - Streamlit
 
-Instalasi dan Cara Menjalankan Dashboard
-1. Pastikan Python telah terinstal di komputer Anda.
-2. nstal dependensi dengan menjalankan perintah: pip install -r requirements.txt
-3. Jalankan Streamlit dengan perintah: streamlit run dashboard/dashboard.py
-4. Buka browser dan akses `http://localhost:8501` untuk melihat dashboard.
+Struktur File
+- `Dashboard.py` : Script utama Streamlit untuk menjalankan dashboard.
+- `day.csv` & `hour.csv` : Dataset peminjaman sepeda per hari dan per jam.
+- `SUFI_BIKE.ipynb` : Notebook eksplorasi dan analisis awal sebelum membuat dashboard.
+
+
+Cara Menjalankan Dashboard
+1. Pastikan semua dependensi sudah terinstall:
+"pip install streamlit pandas matplotlib seaborn"
+2. Jalankan dashboard dengan perintah:
+"streamlit run Dashboard.py"
+3. Dashboard akan terbuka di browser Anda secara otomatis.
 
 Fitur Dashboard
 1. Filter Data. Pengguna dapat memfilter data berdasarkan musim, kondisi cuaca, atau waktu tertentu.
@@ -29,8 +45,8 @@ Fitur Dashboard
 3. Insight Interaktif. Menampilkan insight terkait pola peminjaman sepeda dalam berbagai kondisi.
 
 Analisis yang Dilakukan
-- Bagaimana pengaruh kondisi cuaca terhadap jumlah peminjaman sepeda?
-- Bagaimana pola peminjaman sepeda berdasarkan waktu (jam, hari kerja, dan musim)?
+1. Bagaimana pengaruh kondisi cuaca terhadap jumlah peminjaman sepeda?
+2. Bagaimana pola peminjaman sepeda berdasarkan waktu (jam, hari kerja, dan musim)?
 
 Insight Utama
 - Peminjaman sepeda meningkat saat cuaca cerah dan selama musim tertentu.
